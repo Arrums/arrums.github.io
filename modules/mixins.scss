@@ -1,0 +1,137 @@
+@mixin link-styling {
+    text-decoration: none;
+    color: colors.$snow;
+}
+
+@mixin button-style {
+    border-radius: 10px;
+    font-family: 'Spartan', sans-serif;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+@mixin project-styling-one {
+    padding: 2% 3%;
+    border-bottom: 2px solid colors.$snow; 
+    margin-bottom: 20px;
+
+    &--right {
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    &--left {
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+@mixin project-styling-two {
+    padding: 2% 6%;
+    border-bottom: 2px solid colors.$snow; 
+    margin-bottom: 20px;
+
+    &--right{
+        width: 50%;
+        margin: 10px;
+    }
+
+    &--left {
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+@mixin project-styling-tablet-left {
+    border-bottom: 2px solid colors.$snow; 
+    // margin-bottom: 20px;
+    text-align: center;
+
+    &--right {
+        border-radius: 10px;
+        margin: 10px;
+        width: 60%;
+    }
+
+    &--left {
+        margin: 10px;
+
+    }
+}
+
+
+@mixin project-styling-tablet-right {
+    border-bottom: 2px solid colors.$snow;
+    text-align: center; 
+    // margin-bottom: 20px;
+
+    &--right{
+        margin: 10px;
+    }
+
+    &--left {
+        border-radius: 10px;
+        margin: 10px;
+        width: 60%;
+    }
+}
+
+@mixin project-styling-phone-left {
+    border-bottom: 2px solid colors.$snow; 
+    text-align: center;
+
+    &--right {
+        border-radius: 10px;
+        margin: 10px;
+        width: 45%;
+    }
+
+    &--left {
+        margin: 10px;
+    }
+}
+
+@mixin project-styling-phone-right {
+    border-bottom: 2px solid colors.$snow;
+    text-align: center; 
+
+    &--right{
+        margin: 10px;
+    }
+
+    &--left {
+        border-radius: 10px;
+        margin: 10px;
+        width: 45%;
+    }
+}
+
+
+@mixin flex(
+    $just-cont: center,
+    $align-itm: center,
+    $flx-dir: row,
+    $flx-wp: nowrap
+) {
+    display: flex;
+    justify-content: $just-cont;
+    align-items: $align-itm;
+    flex-direction: $flx-dir;
+    flex-wrap: $flx-wp;
+}
+
+@mixin font-sizing($sm: 12px, $md: 22px, $lg: 70px) {
+    &--font-sm {
+        font-size: $sm;
+    }
+
+    &--font-md {
+        font-size: $md;
+    }
+
+    &--font-lg {
+        font-size: $lg;
+    }
+}
