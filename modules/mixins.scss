@@ -1,20 +1,14 @@
+@use './../partials/colors';
+
 @mixin link-styling {
     text-decoration: none;
-    color: colors.$snow;
+    color: colors.$white;
 }
 
-@mixin button-style {
-    border-radius: 10px;
-    font-family: 'Spartan', sans-serif;
-    width: 80px;
-    padding: 5px;
-    border: none;
-    margin-top: 10px;
-}
 
 @mixin project-styling-one {
     padding: 2% 3%;
-    border-bottom: 2px solid colors.$snow; 
+    border-bottom: 2px solid colors.$white; 
     margin-bottom: 20px;
 
     &--right {
@@ -30,7 +24,7 @@
 
 @mixin project-styling-two {
     padding: 2% 6%;
-    border-bottom: 2px solid colors.$snow; 
+    border-bottom: 2px solid colors.$white; 
     margin-bottom: 20px;
 
     &--right{
@@ -45,8 +39,7 @@
 }
 
 @mixin project-styling-tablet-left {
-    border-bottom: 2px solid colors.$snow; 
-    // margin-bottom: 20px;
+    border-bottom: 2px solid colors.$white; 
     text-align: center;
 
     &--right {
@@ -63,7 +56,7 @@
 
 
 @mixin project-styling-tablet-right {
-    border-bottom: 2px solid colors.$snow;
+    border-bottom: 2px solid colors.$white;
     text-align: center; 
     // margin-bottom: 20px;
 
@@ -79,7 +72,7 @@
 }
 
 @mixin project-styling-phone-left {
-    border-bottom: 2px solid colors.$snow; 
+    border-bottom: 2px solid colors.$white; 
     text-align: center;
 
     &--right {
@@ -94,7 +87,7 @@
 }
 
 @mixin project-styling-phone-right {
-    border-bottom: 2px solid colors.$snow;
+    border-bottom: 2px solid colors.$white;
     text-align: center; 
 
     &--right{

@@ -1,122 +1,13 @@
-@use '../partials/colors';
+@use './../partials/colors';
+@use './../partials/device';
 @use "../modules/mixins.scss";
+@use "./../modules/footer.scss";
+@use "./../modules/navbar.scss";
+@use "./../modules/landing-page.scss";
+@use "./../modules/about-me.scss";
+@use "./../modules/projects.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,500;0,800;0,900;1,500;1,900&family=Spartan:wght@200;300;400;500&display=swap');
-
-//media query sizes
-$phone: 500px;
-$tablet: 768px;
-$pc: 1024px;
-
-
-@mixin link-styling {
-    text-decoration: none;
-    color: colors.$snow;
-}
-
-@mixin button-style {
-    border-radius: 10px;
-    font-family: 'Spartan', sans-serif;
-    width: 80px;
-    padding: 5px;
-    border: none;
-    margin-top: 10px;
-}
-
-@mixin project-styling-one {
-    padding: 2% 3%;
-    border-bottom: 2px solid colors.$snow; 
-    margin-bottom: 20px;
-
-    &--right {
-        border-radius: 10px;
-        margin: 10px;
-    }
-
-    &--left {
-        width: 50%;
-        margin: 10px;
-    }
-}
-
-@mixin project-styling-two {
-    padding: 2% 6%;
-    border-bottom: 2px solid colors.$snow; 
-    margin-bottom: 20px;
-
-    &--right{
-        width: 50%;
-        margin: 10px;
-    }
-
-    &--left {
-        border-radius: 10px;
-        margin: 10px;
-    }
-}
-
-@mixin project-styling-tablet-left {
-    border-bottom: 2px solid colors.$snow; 
-    // margin-bottom: 20px;
-    text-align: center;
-
-    &--right {
-        border-radius: 10px;
-        margin: 10px;
-        width: 60%;
-    }
-
-    &--left {
-        margin: 10px;
-
-    }
-}
-
-
-@mixin project-styling-tablet-right {
-    border-bottom: 2px solid colors.$snow;
-    text-align: center; 
-    // margin-bottom: 20px;
-
-    &--right{
-        margin: 10px;
-    }
-
-    &--left {
-        border-radius: 10px;
-        margin: 10px;
-        width: 60%;
-    }
-}
-
-@mixin project-styling-phone-left {
-    border-bottom: 2px solid colors.$snow; 
-    text-align: center;
-
-    &--right {
-        border-radius: 10px;
-        margin: 10px;
-        width: 45%;
-    }
-
-    &--left {
-        margin: 10px;
-    }
-}
-
-@mixin project-styling-phone-right {
-    border-bottom: 2px solid colors.$snow;
-    text-align: center; 
-
-    &--right{
-        margin: 10px;
-    }
-
-    &--left {
-        border-radius: 10px;
-        margin: 10px;
-        width: 45%;
-    }
-}
 
 * {
     margin: 0;
@@ -125,8 +16,9 @@ $pc: 1024px;
 }
 
 body {
-    background-color: colors.$nadeshiko-pink;
-    color: colors.$snow;
+    background-color: colors.$pale-violet-red;
+    color: colors.$white;
+    width:100%;
 }
 
 p {
@@ -134,141 +26,11 @@ p {
 }
 
 
-// navigation bar
-
-.nav-list {
-    position: fixed;
-    font-family: 'Cutive Mono', monospace;
-    list-style-type: none;
-
-    @media only screen and (min-width: ($pc+ 1)) {
-
-        @include mixins.flex ($just-cont:flex-end);
-        top: 20px;
-        right: 45px;
-
-        &__item{
-            padding: 5px 20px;
-            font-size: 25px;
-        }
-    }
-
-    @media only screen and (min-width: ($phone + 1)) and (max-width: $pc) {
-
-        @include mixins.flex ($just-cont:flex-end);
-        top: 20px;
-        right: 45px;
-
-        &__item{
-            padding: 5px 15px;
-            font-size: 20px;
-        }
-    }
-
-    @media only screen and (max-width: $phone) {
-
-        @include mixins.flex;
-        top: 20px;
-        right: 65px;
-
-        &__item{
-            
-            padding: 5px 15px;
-            font-size: 15px;
-        }
-
-    }
-}
-
-.list-item{
-
-    &__link{
-
-        @include link-styling;
-
-    }
-}
-
-// landing page
-
-.landing-page{
-    background-image: url(../images/ernest-brillo-Qi8CvonsYnM-unsplash.jpg);
-    width: 100vw;
-    height: 100vh;
-    @include mixins.flex($just-cont:space-between, $flx-dir:column);
-
-    @media only screen and (min-width: ($pc+ 1)) {
-
-        &__title {
-            @include mixins.flex($align-itm: flex-start, $flx-dir:column);
-            font-family:'Playfair Display', serif;
-            font-weight: 900;
-            font-style: italic;
-            margin-top: 30vh;
-            font-size: 70px;
-        }
-
-        &__icon{
-            margin-bottom: 10vh;
-
-            &--link {
-                @include link-styling;
-            }
-        }
-    }
-
-    @media only screen and  (min-width: ($phone + 1)) and (max-width: $pc) {
-
-        &__title {
-            @include mixins.flex($align-itm: flex-start, $flx-dir:column);
-            font-family:'Playfair Display', serif;
-            font-weight: 900;
-            font-style: italic;
-            margin-top: 40vh;
-            font-size: 50px;
-        }
-
-        &__icon{
-            margin-bottom: 5vh;
-
-            &--link {
-
-                @include link-styling;
-
-            }
-        }
-    }
-
-    @media only screen and (max-width: $phone) {
-        
-        height: 100vh;
-        padding: 0 15px;
-
-        &__title {
-            @include mixins.flex($align-itm: flex-start, $flx-dir:column);
-            font-family:'Playfair Display', serif;
-            font-weight: 900;
-            font-style: italic;
-            margin-top: 45vh;
-            font-size: 28px;
-        }
-
-        &__icon{
-            margin-bottom: 5vh;
-
-            &--link {
-                @include link-styling;
-            }
-        }
-    }
-}
-
-
 //general styling of the section
 
 .article {
 
-    @media only screen and (min-width: ($pc+ 1)) {
+    @media only screen and (min-width: (device.$pc+ 1)) {
 
         &__title{
             margin: 30px 10px;
@@ -277,13 +39,26 @@ p {
             @include mixins.font-sizing;
         }
 
+        &__about{
+            height: 100vh;
+            @include mixins.flex;
+            margin: auto;
+            width:70%;
+        }
+
         &__gallery{
             @include mixins.flex ($flx-dir:column);
             padding: 0 5%;
         }
+
+        &__tech-skills{
+            height:80vh;
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+        }
     }
 
-    @media only screen and  (min-width: ($phone + 1)) and (max-width: $pc) {
+    @media only screen and  (min-width: (device.$phone + 1)) and (max-width: device.$pc) {
 
         &__title{
             margin: 20px 30px;
@@ -292,15 +67,29 @@ p {
             @include mixins.font-sizing ($lg:60px);
         }
 
+        &__about{
+            @include mixins.flex($just-cont: space-around, $flx-dir:column);
+            height: 100vh;
+            width: 75%;
+            margin: auto;
+            padding-top: 10vh;
+
+        }
+
         &__gallery{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             padding: 0 2vw;
         }
+
+        &__tech-skills{
+            height:80vh;
+            @include mixins.flex;
+        }
     }
 
-    @media only screen and (max-width: $phone) {
+    @media only screen and (max-width: device.$phone) {
         &__title{
             margin: 20px 30px;
             font-family:'Playfair Display', serif;
@@ -308,311 +97,21 @@ p {
             @include mixins.font-sizing ($lg:50px);
         }
 
+        &__about{
+            height: 100vh;
+            @include mixins.flex ($just-cont: flex-start, $flx-dir:column);
+        }
+
         &__gallery{
             @include mixins.flex ($flx-dir:column);
             padding: 0 3vw;
         }
-    }
 
-}
-
-
-// project section
-.project {
-
-    @media only screen and (min-width: ($pc+ 1)) {
-        &__one {
-            @include mixins.flex ($just-cont:space-between, $flx-dir:row-reverse);
-            @include project-styling-one;
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__two{
-            @include mixins.flex($just-cont:space-between);
-            @include project-styling-two;
-
-            &__button{
-                
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-
-        &__three{
-            @include mixins.flex ($just-cont:space-between, $flx-dir:row-reverse);
-            @include project-styling-one();
-
-            &__button{
-                
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__four{
-            @include mixins.flex($just-cont:space-between);
-            @include project-styling-two;
-
-            &__button{
-                
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-
-        &__five{
-            @include mixins.flex ($just-cont:space-between, $flx-dir:row-reverse);
-            @include project-styling-one();
-
-            &__button{
-                
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__six{
-            @include mixins.flex($just-cont:space-between);
-            @include project-styling-two;
-
-            &__button{
-                
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
+        &__tech-skills{
+            height:80vh;
+            @include mixins.flex;
         }
     }
-
-    @media only screen and  (min-width: ($phone + 1)) and (max-width: $pc) {
-        &__one {
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-tablet-left();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__two{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-tablet-right();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-
-        &__three{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-tablet-left();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__four{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-tablet-right();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__five{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-tablet-left();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-
-        &__six{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-tablet-right();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-    }
-
-
-    @media only screen and (max-width: $phone) {
-
-        &__one {
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-phone-left();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__two{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-phone-right();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-
-        &__three{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-phone-left();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__four{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-phone-right();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-
-            }
-        }
-
-        &__five{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-phone-left();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-
-        &__six{
-            @include mixins.flex ($flx-dir:column);
-            @include project-styling-phone-right();
-
-            &__button{
-                &--one{
-                    @include button-style();
-                }
-
-                &--two{
-                    @include button-style();
-                }
-            }
-        }
-    }
-
-
 
 }
 
@@ -620,7 +119,20 @@ p {
 
 .tech-skills {
 
-    @media only screen and (min-width: ($pc+ 1)) {
+    @media only screen and (min-width: (device.$pc+ 1)) {
+        &__list{
+            list-style-type: none;
+            @include mixins.flex;
+    
+            &__item{
+                font-size: 60px;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    @media only screen and  (min-width: (device.$phone + 1)) and (max-width: device.$pc) {
+
         &__list{
             list-style-type: none;
             @include mixins.flex ($just-cont: space-evenly);
@@ -631,19 +143,7 @@ p {
         }
     }
 
-    @media only screen and  (min-width: ($phone + 1)) and (max-width: $pc) {
-
-        &__list{
-            list-style-type: none;
-            @include mixins.flex ($just-cont: space-evenly);
-    
-            &__item{
-                @include mixins.font-sizing;
-            }
-        }
-    }
-
-    @media only screen and (max-width: $phone) {
+    @media only screen and (max-width: device.$phone) {
 
         &__list{
             list-style-type: none;
@@ -654,222 +154,5 @@ p {
             }
         }
     }
-
-}
-
-// About me section
-
-.about-me{
-
-    @media only screen and (min-width: ($pc+ 1)) {
-
-        &__wrapper{
-            height: 350px;
-            @include mixins.flex;
-            margin: auto;
-            width:60%;
-    
-            &__photo{
-                position: relative;
-                background-color: colors.$baby-blue-eyes;
-                height:60%;
-    
-                img{
-                    position: relative;
-                    left: -50px;
-                    top: 40px;
-                }
-            }
-    
-            &__text {
-                padding: 0 30px;
-            }
-        }
-
-    }
-
-    @media only screen and  (min-width: ($phone + 1)) and (max-width: $pc) {
-
-        &__wrapper{
-            height: 250px;
-            @include mixins.flex;
-            margin: -1vw 0 15vw 15vw;
-            width:70%;
-    
-            &__photo{
-                position: relative;
-                background-color: colors.$baby-blue-eyes;
-                height:70%;
-    
-                img{
-                    position: relative;
-                    left: -40px;
-                    top: 30px;
-                }
-            }
-    
-            &__text {
-                padding: 0 30px;
-            }
-        }
-    }
-
-    @media only screen and (max-width: $phone) {
-
-        &__wrapper{
-            height: 350px;
-            @include mixins.flex ($just-cont: flex-start, $flx-dir:column);
-            // margin: auto;
-    
-            &__photo{
-                // position: relative;
-                background-color: colors.$baby-blue-eyes;
-                margin-bottom: 30px;
-                // height:50%;
-    
-                img{
-                    
-                    width:90%;
-                    position: relative;
-                    left: -10px;
-                    top: 20px;
-                }
-            }
-    
-            &__text {
-                padding: 10px 20px;
-                text-align: center;
-
-                p {
-                    font-size: 14px;
-                }
-            }
-        }
-
-
-    }
-
-
-}
-
-// footer section
-.footer {
-    background-color: colors.$baby-blue-eyes;
-    @include mixins.flex ($flx-dir: column);
-    padding: 20px 0;
-    margin: auto;
-
-    @media only screen and (min-width: ($pc+ 1)) {
-        &__email {
-            margin-bottom: 10px;
-    
-            &__link {
-    
-                text-decoration: none;
-                color: colors.$snow;
-                font-family: 'Cutive Mono', monospace;
-                @include mixins.font-sizing;
-            }
-        }
-        
-        &__links {
-    
-            @include mixins.flex ($just-cont: space-evenly);
-            margin-bottom: 10px;
-    
-            &__item{
-                @include mixins.flex;
-                margin: 10px;
-                color: colors.$snow;
-    
-                &:hover {
-                    color: colors.$orchid-pink;
-                }
-            }
-        }
-    
-        &__info {
-    
-            p{
-                font-family: 'Cutive Mono', monospace;
-            }
-        }
-
-    }
-
-    @media only screen and  (min-width: ($phone + 1)) and (max-width: $pc) {
-        &__email {
-            margin-bottom: 5px;
-    
-            &__link {
-    
-                text-decoration: none;
-                color: colors.$snow;
-                font-family: 'Cutive Mono', monospace;
-                @include mixins.font-sizing;
-            }
-        }
-        
-        &__links {
-    
-            @include mixins.flex ($just-cont: space-evenly);
-            margin-bottom: 5px;
-    
-            &__item{
-                @include mixins.flex;
-                margin: 10px;
-                color: colors.$snow;
-    
-                &:hover {
-                    color: colors.$orchid-pink;
-                }
-            }
-        }
-    
-        &__info {
-    
-            p{
-                font-family: 'Cutive Mono', monospace;
-            }
-        }
-    }
-
-    @media only screen and (max-width: $phone) {
-
-        &__email {
-    
-            &__link {
-    
-                text-decoration: none;
-                color: colors.$snow;
-                font-family: 'Cutive Mono', monospace;
-                @include mixins.font-sizing($md:18px);
-            }
-        }
-        
-        &__links {
-    
-            @include mixins.flex ($just-cont: space-evenly);
-    
-            &__item{
-                @include mixins.flex;
-                margin: 10px;
-                color: colors.$snow;
-    
-                &:hover {
-                    color: colors.$orchid-pink;
-                }
-            }
-        }
-    
-        &__info {
-    
-            p{
-                font-family: 'Cutive Mono', monospace;
-            }
-        }
-
-    }
-
 
 }
