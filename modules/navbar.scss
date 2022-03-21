@@ -1,57 +1,49 @@
-@use './../partials/colors';
-@use './../partials/device';
+@use "./../partials/colors";
+@use "./../partials/device";
 @use "./mixins.scss";
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,500;0,800;0,900;1,500;1,900&family=Spartan:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,500;0,800;0,900;1,500;1,900&family=Spartan:wght@200;300;400;500&display=swap");
 
 .nav-list {
-    position: fixed;
-    font-family: 'Cutive Mono', monospace;
-    list-style-type: none;
+	position: fixed;
+	font-family: "Cutive Mono", monospace;
+	list-style-type: none;
 
-    @media only screen and (min-width: (device.$pc+ 1)) {
+	@media only screen and (min-width: (device.$pc+ 1)) {
+		@include mixins.flex($just-cont: flex-end);
+		top: 20px;
+		right: 45px;
 
-        @include mixins.flex ($just-cont:flex-end);
-        top: 20px;
-        right: 45px;
+		&__item {
+			padding: 5px 20px;
+			font-size: 30px;
+		}
+	}
 
-        &__item{
-            padding: 5px 20px;
-            font-size: 25px;
-        }
-    }
+	@media only screen and (min-width: (device.$phone + 1)) and (max-width: device.$pc) {
+		@include mixins.flex($just-cont: flex-end);
+		top: 20px;
+		right: 45px;
 
-    @media only screen and (min-width: (device.$phone + 1)) and (max-width: device.$pc) {
+		&__item {
+			padding: 5px 15px;
+			font-size: 22px;
+		}
+	}
 
-        @include mixins.flex ($just-cont:flex-end);
-        top: 20px;
-        right: 45px;
+	@media only screen and (max-width: device.$phone) {
+		@include mixins.flex;
+		top: 20px;
+		right: 25px;
 
-        &__item{
-            padding: 5px 15px;
-            font-size: 20px;
-        }
-    }
-
-    @media only screen and (max-width: device.$phone) {
-
-        @include mixins.flex;
-        top: 20px;
-        right: 65px;
-
-        &__item{
-            
-            padding: 5px 15px;
-            font-size: 15px;
-        }
-
-    }
+		&__item {
+			padding: 5px 15px;
+			font-size: 16px;
+		}
+	}
 }
 
-.list-item{
-
-    &__link{
-
-        @include mixins.link-styling;
-
-    }
-}
+// .list-item {
+// 	&__link {
+// 		@include mixins.link-styling;
+// 	}
+// }
