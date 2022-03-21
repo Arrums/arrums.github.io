@@ -6,145 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,500;0,800;0,900;1,500;1,900&family=Spartan:wght@200;300;400;500&display=swap");
 /* SCSS HEX */
 /* SCSS Gradient */
-.footer {
-  background-color: #414174ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 20px 0;
-  margin: auto;
-}
-@media only screen and (min-width: 1025px) {
-  .footer__email {
-    margin-bottom: 10px;
-  }
-  .footer__email__link {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Cutive Mono", monospace;
-  }
-  .footer__email__link--font-sm {
-    font-size: 12px;
-  }
-  .footer__email__link--font-md {
-    font-size: 22px;
-  }
-  .footer__email__link--font-lg {
-    font-size: 70px;
-  }
-  .footer__links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-bottom: 10px;
-  }
-  .footer__links__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 10px;
-    text-decoration: none;
-    color: #fff;
-  }
-  .footer__links__item:hover {
-    color: #e07c96;
-  }
-  .footer__info p {
-    font-family: "Cutive Mono", monospace;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-  .footer__email {
-    margin-bottom: 5px;
-  }
-  .footer__email__link {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Cutive Mono", monospace;
-  }
-  .footer__email__link--font-sm {
-    font-size: 12px;
-  }
-  .footer__email__link--font-md {
-    font-size: 22px;
-  }
-  .footer__email__link--font-lg {
-    font-size: 70px;
-  }
-  .footer__links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin-bottom: 5px;
-  }
-  .footer__links__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 10px;
-    text-decoration: none;
-    color: #fff;
-  }
-  .footer__links__item:hover {
-    color: #e07c96;
-  }
-  .footer__info p {
-    font-family: "Cutive Mono", monospace;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .footer__email__link {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Cutive Mono", monospace;
-  }
-  .footer__email__link--font-sm {
-    font-size: 12px;
-  }
-  .footer__email__link--font-md {
-    font-size: 18px;
-  }
-  .footer__email__link--font-lg {
-    font-size: 70px;
-  }
-  .footer__links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .footer__links__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 10px;
-    text-decoration: none;
-    color: #fff;
-  }
-  .footer__links__item:hover {
-    color: #e07c96;
-  }
-  .footer__links__item:visited {
-    color: #fff;
-  }
-  .footer__info p {
-    font-family: "Cutive Mono", monospace;
-  }
-}
-
 .nav-list {
   position: fixed;
   font-family: "Cutive Mono", monospace;
@@ -162,7 +23,7 @@
   }
   .nav-list__item {
     padding: 5px 20px;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 1024px) {
@@ -177,7 +38,7 @@
   }
   .nav-list__item {
     padding: 5px 15px;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -188,17 +49,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     top: 20px;
-    right: 65px;
+    right: 25px;
   }
   .nav-list__item {
     padding: 5px 15px;
-    font-size: 15px;
+    font-size: 16px;
   }
-}
-
-.list-item__link {
-  text-decoration: none;
-  color: #fff;
 }
 
 .landing-page {
@@ -265,11 +121,11 @@
     font-family: "Playfair Display", serif;
     font-weight: 900;
     font-style: italic;
-    margin-top: 45vh;
-    font-size: 28px;
+    margin-top: 35vh;
+    font-size: 26px;
   }
   .landing-page__icon {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
   }
   .landing-page__icon--link {
     text-decoration: none;
@@ -292,44 +148,46 @@
   }
   .about-me__text p {
     font-size: 25px;
+    margin-bottom: 25px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 1024px) {
   .about-me__photo {
-    position: relative;
     background-color: #414174ff;
-    width: 70%;
   }
   .about-me__photo img {
     position: relative;
-    left: -20px;
-    top: 50px;
+    left: -40px;
+    top: 55px;
   }
   .about-me__text {
     margin: auto;
   }
   .about-me__text p {
-    font-size: 22px;
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 500px) {
   .about-me__photo {
-    background-color: #414174ff;
-    margin-bottom: 30px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
   .about-me__photo img {
-    width: 250px;
-    position: relative;
-    left: -10px;
-    top: 20px;
+    width: 90%;
   }
   .about-me__text {
-    padding: 10px 20px;
     text-align: center;
+    margin-top: 5vh;
   }
   .about-me__text p {
     font-size: 14px;
+    margin-bottom: 20px;
   }
 }
 
@@ -697,6 +555,214 @@
   }
 }
 
+@media only screen and (min-width: 1025px) {
+  .tech-skills__list {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-color: #fff;
+    border-left-style: solid;
+    border-right-style: solid;
+    margin: 10vh 20vh;
+  }
+  .tech-skills__list__item {
+    height: 90px;
+    width: 90px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .tech-skills__list {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-color: #fff;
+    border-left-style: solid;
+    border-right-style: solid;
+    margin: 5vh;
+  }
+  .tech-skills__list__item {
+    font-size: 70px;
+    margin: auto;
+  }
+  .tech-skills__list__item img {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .tech-skills__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 2vh;
+  }
+  .tech-skills__list__item {
+    font-size: 48px;
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tech-skills__list__item img {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.footer {
+  background-color: #414174ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px 0;
+  margin: auto;
+}
+@media only screen and (min-width: 1025px) {
+  .footer__email {
+    margin-bottom: 10px;
+  }
+  .footer__email__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Cutive Mono", monospace;
+  }
+  .footer__email__link--font-sm {
+    font-size: 12px;
+  }
+  .footer__email__link--font-md {
+    font-size: 22px;
+  }
+  .footer__email__link--font-lg {
+    font-size: 70px;
+  }
+  .footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+  }
+  .footer__links__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer__links__item:hover {
+    color: #e07c96;
+  }
+  .footer__info p {
+    font-family: "Cutive Mono", monospace;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .footer__email {
+    margin-bottom: 5px;
+  }
+  .footer__email__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Cutive Mono", monospace;
+  }
+  .footer__email__link--font-sm {
+    font-size: 12px;
+  }
+  .footer__email__link--font-md {
+    font-size: 22px;
+  }
+  .footer__email__link--font-lg {
+    font-size: 70px;
+  }
+  .footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+  }
+  .footer__links__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer__links__item:hover {
+    color: #e07c96;
+  }
+  .footer__info p {
+    font-family: "Cutive Mono", monospace;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer__email__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Cutive Mono", monospace;
+  }
+  .footer__email__link--font-sm {
+    font-size: 12px;
+  }
+  .footer__email__link--font-md {
+    font-size: 18px;
+  }
+  .footer__email__link--font-lg {
+    font-size: 70px;
+  }
+  .footer__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .footer__links__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer__links__item:hover {
+    color: #e07c96;
+  }
+  .footer__links__item:visited {
+    color: #fff;
+  }
+  .footer__info p {
+    font-family: "Cutive Mono", monospace;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -713,9 +779,14 @@ p {
   font-family: "Spartan", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media only screen and (min-width: 1025px) {
   .article__title {
-    margin: 30px 10px;
+    margin: 0 0 20px 30px;
     font-family: "Playfair Display", serif;
     font-weight: 800;
   }
@@ -747,14 +818,12 @@ p {
     padding: 0 5%;
   }
   .article__tech-skills {
-    height: 80vh;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 1024px) {
   .article__title {
-    margin: 20px 30px;
+    margin: 20px 0 15px 25px;
     font-family: "Playfair Display", serif;
     font-weight: 800;
   }
@@ -773,7 +842,7 @@ p {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 100vh;
+    height: 90vh;
     width: 75%;
     margin: auto;
     padding-top: 10vh;
@@ -785,12 +854,7 @@ p {
     padding: 0 2vw;
   }
   .article__tech-skills {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    height: 100vh;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -810,8 +874,10 @@ p {
   }
   .article__about {
     height: 100vh;
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -823,66 +889,5 @@ p {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 0 3vw;
-  }
-  .article__tech-skills {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .tech-skills__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .tech-skills__list__item {
-    font-size: 60px;
-    padding: 0 20px;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-  .tech-skills__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .tech-skills__list__item--font-sm {
-    font-size: 12px;
-  }
-  .tech-skills__list__item--font-md {
-    font-size: 22px;
-  }
-  .tech-skills__list__item--font-lg {
-    font-size: 70px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .tech-skills__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .tech-skills__list__item--font-sm {
-    font-size: 12px;
-  }
-  .tech-skills__list__item--font-md {
-    font-size: 18px;
-  }
-  .tech-skills__list__item--font-lg {
-    font-size: 70px;
   }
 }
