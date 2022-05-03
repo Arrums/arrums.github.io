@@ -1,130 +1,130 @@
-@use './../partials/colors';
+@use "./../partials/colors";
 
 @mixin link-styling {
-    text-decoration: none;
-    color: colors.$white;
+	text-decoration: none;
+	color: colors.$white;
 }
 
-
 @mixin project-styling-one {
-    padding: 2% 3%;
-    border-bottom: 2px solid colors.$white; 
-    margin-bottom: 20px;
+	padding: 2% 3%;
+	border-bottom: 2px solid colors.$white;
+	margin-bottom: 20px;
 
-    &--right {
-        border-radius: 10px;
-        margin: 10px;
-    }
+	&--right {
+		border-radius: 7px;
+		margin: 10px;
+		width: 500px;
+		height: auto;
+	}
 
-    &--left {
-        width: 50%;
-        margin: 10px;
-    }
+	&--left {
+		width: 50%;
+		margin: 10px;
+	}
 }
 
 @mixin project-styling-two {
-    padding: 2% 6%;
-    border-bottom: 2px solid colors.$white; 
-    margin-bottom: 20px;
+	padding: 2% 6%;
+	border-bottom: 2px solid colors.$white;
+	margin-bottom: 20px;
 
-    &--right{
-        width: 50%;
-        margin: 10px;
-    }
+	&--right {
+		width: 50%;
+		margin: 10px;
+	}
 
-    &--left {
-        border-radius: 10px;
-        margin: 10px;
-    }
+	&--left {
+		border-radius: 7px;
+		margin: 10px;
+		width: 500px;
+		height: auto;
+	}
 }
 
 @mixin project-styling-tablet-left {
-    border-bottom: 2px solid colors.$white; 
-    text-align: center;
+	border-bottom: 2px solid colors.$white;
+	text-align: center;
 
-    &--right {
-        border-radius: 10px;
-        margin: 10px;
-        width: 60%;
-    }
+	&--right {
+		border-radius: 10px;
+		margin: 10px;
+		width: 60%;
+	}
 
-    &--left {
-        margin: 10px;
-
-    }
+	&--left {
+		margin: 10px;
+	}
 }
 
-
 @mixin project-styling-tablet-right {
-    border-bottom: 2px solid colors.$white;
-    text-align: center; 
-    // margin-bottom: 20px;
+	border-bottom: 2px solid colors.$white;
+	text-align: center;
+	// margin-bottom: 20px;
 
-    &--right{
-        margin: 10px;
-    }
+	&--right {
+		margin: 10px;
+	}
 
-    &--left {
-        border-radius: 10px;
-        margin: 10px;
-        width: 60%;
-    }
+	&--left {
+		border-radius: 10px;
+		margin: 10px;
+		width: 60%;
+	}
 }
 
 @mixin project-styling-phone-left {
-    border-bottom: 2px solid colors.$white; 
-    text-align: center;
+	border-bottom: 2px solid colors.$white;
+	text-align: center;
 
-    &--right {
-        border-radius: 10px;
-        margin: 10px;
-        width: 45%;
-    }
+	&--right {
+		border-radius: 10px;
+		margin: 10px;
+		width: 45%;
+	}
 
-    &--left {
-        margin: 10px;
-    }
+	&--left {
+		margin: 10px;
+	}
 }
 
 @mixin project-styling-phone-right {
-    border-bottom: 2px solid colors.$white;
-    text-align: center; 
+	border-bottom: 2px solid colors.$white;
+	text-align: center;
 
-    &--right{
-        margin: 10px;
-    }
+	&--right {
+		margin: 10px;
+	}
 
-    &--left {
-        border-radius: 10px;
-        margin: 10px;
-        width: 45%;
-    }
+	&--left {
+		border-radius: 10px;
+		margin: 10px;
+		width: 45%;
+	}
 }
 
-
 @mixin flex(
-    $just-cont: center,
-    $align-itm: center,
-    $flx-dir: row,
-    $flx-wp: nowrap
+	$just-cont: center,
+	$align-itm: center,
+	$flx-dir: row,
+	$flx-wp: nowrap
 ) {
-    display: flex;
-    justify-content: $just-cont;
-    align-items: $align-itm;
-    flex-direction: $flx-dir;
-    flex-wrap: $flx-wp;
+	display: flex;
+	justify-content: $just-cont;
+	align-items: $align-itm;
+	flex-direction: $flx-dir;
+	flex-wrap: $flx-wp;
 }
 
 @mixin font-sizing($sm: 12px, $md: 22px, $lg: 70px) {
-    &--font-sm {
-        font-size: $sm;
-    }
+	&--font-sm {
+		font-size: $sm;
+	}
 
-    &--font-md {
-        font-size: $md;
-    }
+	&--font-md {
+		font-size: $md;
+	}
 
-    &--font-lg {
-        font-size: $lg;
-    }
+	&--font-lg {
+		font-size: $lg;
+	}
 }

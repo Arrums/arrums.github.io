@@ -25,22 +25,12 @@
 			@include mixins.project-styling-two;
 		}
 
-		&__five {
-			@include mixins.flex($just-cont: space-between, $flx-dir: row-reverse);
-			@include mixins.project-styling-one();
-		}
-
-		&__six {
-			@include mixins.flex($just-cont: space-between);
-			@include mixins.project-styling-two;
-		}
-
 		&__button {
 			margin-top: 15px;
 
 			&__item {
 				@include mixins.link-styling;
-				font-size: 40px;
+				font-size: 45px;
 				padding: 0 5px;
 
 				&:hover {
@@ -75,23 +65,13 @@
 			@include mixins.project-styling-tablet-right();
 		}
 
-		&__five {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-tablet-left();
-		}
-
-		&__six {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-tablet-right();
-		}
-
 		&__button {
 			margin-top: 15px;
 
 			&__item {
 				@include mixins.link-styling;
 				padding: 0 5px;
-				font-size: 35px;
+				font-size: 48px;
 
 				&:hover {
 					color: colors.$purple-navy;
@@ -125,23 +105,13 @@
 			@include mixins.project-styling-phone-right();
 		}
 
-		&__five {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-phone-left();
-		}
-
-		&__six {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-phone-right();
-		}
-
 		&__button {
 			margin-top: 10px;
 
 			&__item {
 				@include mixins.link-styling;
 				padding: 0 5px;
-				font-size: 20px;
+				font-size: 48px;
 
 				&:hover {
 					color: colors.$purple-navy;
