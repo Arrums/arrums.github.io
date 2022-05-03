@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/style.css">
-    
+    <meta name="description" content="Arrum Soerjo, Software Engineer">
+    <link rel="stylesheet" href="./modules/style.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/17b34842ce.js" crossorigin="anonymous"></script>
 
 
-
-    <title>Portfolio - Arrum</title>
+    <title>Arrum Soerjo | Software Engineer</title>
 </head>
 <body>
-    <nav>
+
+    <nav class = "navbar">
         <ul class="nav-list">
-            <li class="nav-list__item"><a href="#about" class="list-item__link">About</a></li>
-            <li class="nav-list__item"><a href="#projects" class="list-item__link">Projects</a></li>
-            <li class="nav-list__item"><a href="#techSkills" class="list-item__link">Tech Skills</a></li>
+            <li class="nav-list__item"><a href="#about" class="list-item__link nav-link-one">About</a></li>
+            <li class="nav-list__item"><a href="#projects" class="list-item__link  nav-link-two">Projects</a></li>
+            <li class="nav-list__item"><a href="#techSkills" class="list-item__link  nav-link-three">Tech Skills</a></li>
         </ul>
+
+        <div class="nav-btn">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </div>
     </nav>
 
     <!-- Landing Page -->
     <article class="landing-page">
-        <h1 class="landing-page__title">I'm Arrum<span>Melbourne based software</span><span>developer student</span></h1>
+        <h1 class="landing-page__title">I'm Arrum<span>Melbourne based</span><span>software engineer student</span></h1>
 
         <div class="landing-page__icon">
         <a href="#about" class="landing-page__icon--link"><i class="fa-solid fa-arrow-down fa-3x"></i></a>
@@ -36,13 +45,15 @@
             
             <section class="article__about">
                 <section class="about-me__photo">
-                    <img src="https://placebear.com/400/400">
+                    <img src="./images/photo.jpg">
                 </section>
     
                 <section class="about-me__text">
-                    <p>My name is Arrum and I'm a software developer student at _nology Australia. I have a diverse work experience in regards to my work experience, as I have worked in hospitality industry for about 6 years and I have also work in design industry for a year. </p>
+                    <p>My name is Arrum and I'm a software engineer student at _nology Australia. I am driven, experienced in working with people from all over the world and adaptable to new environments. The aviation and hospitality industry has taught me to be a creative problem solver even with limited resources. I take great pleasure with helping people and this has been proven at my previous job where I was nominated for an award due to my exceptional customer service within the first two months of employment. </p>
 
-                    <p>I managed to travel the world during my time working in hospitality which gave me exposure to work with people from different culture.</p>
+                    <p>At the height of COVID-19, I realised how technology has helped bring people together and how sustainable this industry is. Apart from that, the tech industry has evolved to become more collaborative, the workforce has become more diverse, and I want to be a part of this change. </p>
+
+                    <p>In my spare time, I enjoy watching Korean dramas, learning how to dance (KPOP and Street Jazz), trying new restaurants in the city, and playing casual games.</p>
                 </section>
         </section>
         </article>
@@ -52,89 +63,64 @@
         <h2 class="article__title article__title--font-lg">Projects</h2>
 
         <div class="article__gallery">
-            <div class="project__one">
-                <img class ="project__one--right"src="https://placekitten.com/250/250" />
+            <div data-aos="fade-right" class="project__one">
+                <img class ="project__one--right"src="https://user-images.githubusercontent.com/100544967/162741898-3cd50cde-a004-43ad-8366-899e6104d787.PNG" />
 
                 <div class ="project__one--left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Book finder website using react JS. The Google Books API is used as the database. Currently the search result will return 12 books.</p>
                 
                     <div class="project__button">
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                        <a href="https://github.com/Arrums/react-find-a-book" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://arrums.github.io/react-find-a-book/" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="project__two">
-                <img class="project__two--left" src="https://placekitten.com/250/250" />
+            <div data-aos="fade-left" class="project__two">
+                <img class ="project__two--left"src="https://user-images.githubusercontent.com/100544967/162129684-c2f2e22f-9b97-4551-ad96-87d1d8c777c9.PNG" />
 
                 <div class ="project__two--right">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-
+                <p>Morse code translator built using HTML, SCSS, and Javascript. This translator convert English to Morse Code and vice versa. I created object for the dictionary and use iterators to access the key value pairs.</p>
+                
                     <div class="project__button">
-                        <a href="https://github.com/Arrums"class="project__button__item" target="_blanks\"><i class="fa-brands fa-github-square"></i></a>
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                        <a href="https://github.com/Arrums/JS-project-morse-code" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://arrums.github.io/JS-project-morse-code/" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
                     </div>
+
                 </div>
+
             </div>
 
-            <div class="project__three">
-                <img class ="project__one--right"src="https://placekitten.com/250/250" />
+            <div data-aos="fade-right" class="project__three">
+                <img class="project__one--right" src="./images/calculator.PNG" />
 
                 <div class ="project__one--left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
+                    <p>Calculator project built using Javascript, HTML, and SCSS. The calculator is capable of performing operations such: addition, subtraction,
+                    division, multiplication and able to handle decimals. Since, I'm not allowed to use eval(), I used switch statement to calculate the values.</p>
+
                     <div class="project__button">
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                        <a href="https://github.com/Arrums/JS-project-calculator"class="project__button__item" target="_blanks\"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://arrums.github.io/JS-project-calculator/" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
                     </div>
-
                 </div>
-
             </div>
 
-            <div class="project__four">
-                <img class="project__two--left" src="https://placekitten.com/250/250" />
+
+
+            <div data-aos="fade-left" class="project__four">
+                <img class="project__two--left" src="https://user-images.githubusercontent.com/100544967/166140627-f4a475d9-e923-4629-9bb4-68c1930f5cce.PNG" />
 
                 <div class ="project__two--right">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>A collection of simple games on website built using Javascript, HTML and SCSS. This an ongoing project as I intend to built more simple games as way to deepen my knowledge in JS.</p>
 
                     <div class="project__button">
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                        <a href="https://github.com/Arrums/JS-project-games" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="project__five">
-                <img class ="project__one--right"src="https://placekitten.com/250/250" />
-
-                <div class ="project__one--left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
-                    <div class="project__button">
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="project__six">
-                <img class="project__two--left" src="https://placekitten.com/250/250" />
-
-                <div class ="project__two--right">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-
-                    <div class="project__button">
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-brands fa-github-square"></i></a>
-                        <a href="https://github.com/Arrums" class="project__button__item" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                    </div>
-                </div>
-            </div>
     </article>
 
      <!--Tech Skills that I know section -->
@@ -210,6 +196,10 @@
             <p><a target="_blank" href="https://icons8.com/icon/90519/spring-logo">Icons by Icons8</a>  | © 2022 Arrum Soerjo</p>
         </section>
     </footer>
-    
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -7,19 +7,21 @@
 	@media only screen and (min-width: (device.$pc+ 1)) {
 		&__photo {
 			background-color: colors.$purple-navy;
-			height: 50%;
-
+			width: 45%;
 			img {
 				position: relative;
 				left: -50px;
 				top: 50px;
+				width: 95%;
+				height: auto;
 			}
 		}
 
 		&__text {
 			padding-left: 50px;
+			width: 55%;
 			p {
-				font-size: 25px;
+				font-size: 19px;
 				margin-bottom: 25px;
 			}
 		}
