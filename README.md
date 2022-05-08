@@ -1,4 +1,4 @@
-# Arrum Soerjo's Website Portfolio
+# Website Portfolio
 
 This is an ongoing project of my website portfolio. The website has a responsive
 design to mobile, tablet, and computer screen sizes.
@@ -7,7 +7,7 @@ design to mobile, tablet, and computer screen sizes.
 
 ## Screenshots
 
-![Landing Page section](https://user-images.githubusercontent.com/100544967/159216593-1398d6d1-1014-454a-873d-e0a649b70de8.PNG)
+![screenshot-landing-page](https://user-images.githubusercontent.com/100544967/167287580-76a2ae13-e419-43db-a66d-a22e8147832b.PNG)
 
 ## Goals
 
