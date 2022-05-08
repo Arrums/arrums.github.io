@@ -29,7 +29,7 @@
 
 	@media only screen and (max-width: device.$tablet) {
 		&__photo {
-			@include mixins.flex($just-cont: center);
+			@include mixins.flex;
 			img {
 				width: 60%;
 			}
