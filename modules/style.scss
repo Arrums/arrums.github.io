@@ -1,3 +1,4 @@
+@use "./reset.scss";
 @use "../partials/colors";
 @use "../partials/device";
 @use "./mixins.scss";
@@ -10,86 +11,34 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,500;0,800;0,900;1,500;1,900&family=Spartan:wght@200;300;400;500&display=swap");
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-}
-
-body {
-	background-color: colors.$pale-violet-red;
-	color: colors.$white;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-p {
-	font-family: "Spartan", sans-serif;
-}
-
-a {
-	@include mixins.link-styling;
-}
-
 //general styling of the section
 
 .article {
-	@media only screen and (min-width: (device.$pc+ 1)) {
-		&__title {
-			margin: 0 0 20px 30px;
-			font-family: "Playfair Display", serif;
-			font-weight: 800;
-			@include mixins.font-sizing;
-		}
-
-		&__about {
-			height: 100vh;
-			@include mixins.flex;
-			margin: auto;
-			width: 75%;
-		}
-
-		&__gallery {
-			@include mixins.flex($flx-dir: column);
-			padding: 0 5%;
-		}
-
-		&__tech-skills {
-			height: 100vh;
-		}
+	&__title {
+		margin: 2rem 0 -2.5rem 2rem;
+		font-family: "Playfair Display", serif;
+		font-weight: 800;
+		@include mixins.font-sizing;
 	}
 
-	@media only screen and (max-width: device.$pc) {
-		// 	&__title {
-		// 		margin: 20px 0 15px 25px;
-		// 		font-family: "Playfair Display", serif;
-		// 		font-weight: 800;
-		// 		@include mixins.font-sizing($lg: 60px);
-		// 	}
+	&__about {
+		height: 95vh;
+		@include mixins.flex;
+		margin: auto;
+		width: 75%;
+	}
 
-		// 	&__about {
-		// 		@include mixins.flex($just-cont: space-around, $flx-dir: column);
-		// 		height: 90vh;
-		// 		width: 75%;
-		// 		margin: auto;
-		// 		padding-top: 10vh;
-		// 	}
+	&__gallery {
+		@include mixins.flex($flx-dir: column);
+		padding: 0 4rem;
+		overflow-x: hidden;
+	}
 
-		// 	&__gallery {
-		// 		display: grid;
-		// 		grid-template-columns: repeat(2, 1fr);
-		// 		gap: 30px;
-		// 		padding: 0 2vw;
-		// 	}
+	&__tech-skills {
+		height: 100vh;
+	}
 
-		// 	&__tech-skills {
-		// 		height: 100vh;
-		// 	}
-		// }
-
-		// @media only screen and (max-width: device.$phone) {
-
+	@media only screen and (max-width: device.$tablet) {
 		&__title {
 			margin: 20px 30px;
 			font-family: "Playfair Display", serif;
@@ -99,7 +48,7 @@ a {
 
 		&__about {
 			height: 100vh;
-			width: 80%;
+			width: 90%;
 			margin: auto;
 			@include mixins.flex($flx-dir: column);
 		}
@@ -107,6 +56,11 @@ a {
 		&__gallery {
 			@include mixins.flex($flx-dir: column);
 			padding: 0 3vw;
+			overflow-x: hidden;
+		}
+
+		&__tech-skills {
+			height: 100vh;
 		}
 	}
 }

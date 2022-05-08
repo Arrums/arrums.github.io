@@ -4,87 +4,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,500;0,800;0,900;1,500;1,900&family=Spartan:wght@200;300;400;500&display=swap");
 
 .project {
-	@media only screen and (min-width: (device.$pc+ 1)) {
-		&__one {
-			@include mixins.flex($just-cont: space-between, $flx-dir: row-reverse);
-			@include mixins.project-styling-one;
-		}
+	&__one {
+		@include mixins.flex($just-cont: space-between, $flx-dir: row-reverse);
+		@include mixins.project-styling-one;
+	}
 
-		&__two {
-			@include mixins.flex($just-cont: space-between);
-			@include mixins.project-styling-two;
-		}
+	&__two {
+		@include mixins.flex($just-cont: space-between);
+		@include mixins.project-styling-two;
+	}
 
-		&__three {
-			@include mixins.flex($just-cont: space-between, $flx-dir: row-reverse);
-			@include mixins.project-styling-one();
-		}
+	&__three {
+		@include mixins.flex($just-cont: space-between, $flx-dir: row-reverse);
+		@include mixins.project-styling-one();
+	}
 
-		&__four {
-			@include mixins.flex($just-cont: space-between);
-			@include mixins.project-styling-two;
-		}
+	&__four {
+		@include mixins.flex($just-cont: space-between);
+		@include mixins.project-styling-two;
+	}
 
-		&__button {
-			margin-top: 15px;
+	&__button {
+		margin-top: 15px;
 
-			&__item {
-				@include mixins.link-styling;
-				font-size: 45px;
-				padding: 0 5px;
+		&__item {
+			font-size: 45px;
+			padding: 0 5px;
+			transition: all 0.3s ease;
 
-				&:hover {
-					color: colors.$purple-navy;
-				}
-
-				&:visited {
-					color: colors.$white;
-				}
+			&:hover {
+				color: colors.$purple-navy;
 			}
 		}
 	}
 
-	@media only screen and (min-width: (device.$phone + 1)) and (max-width: device.$pc) {
-		&__one {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-tablet-left();
-		}
+	@media only screen and (max-width: device.$tablet) {
+		// 	&__one {
+		// 		@include mixins.flex($flx-dir: column);
+		// 		@include mixins.project-styling-tablet-left();
+		// 	}
 
-		&__two {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-tablet-right();
-		}
+		// 	&__two {
+		// 		@include mixins.flex($flx-dir: column);
+		// 		@include mixins.project-styling-tablet-right();
+		// 	}
 
-		&__three {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-tablet-left();
-		}
+		// 	&__three {
+		// 		@include mixins.flex($flx-dir: column);
+		// 		@include mixins.project-styling-tablet-left();
+		// 	}
 
-		&__four {
-			@include mixins.flex($flx-dir: column);
-			@include mixins.project-styling-tablet-right();
-		}
+		// 	&__four {
+		// 		@include mixins.flex($flx-dir: column);
+		// 		@include mixins.project-styling-tablet-right();
+		// 	}
 
-		&__button {
-			margin-top: 15px;
+		// 	&__button {
+		// 		margin-top: 15px;
 
-			&__item {
-				@include mixins.link-styling;
-				padding: 0 5px;
-				font-size: 48px;
+		// 		&__item {
+		// 			@include mixins.link-styling;
+		// 			padding: 0 5px;
+		// 			font-size: 45px;
 
-				&:hover {
-					color: colors.$purple-navy;
-				}
+		// 			&:hover {
+		// 				color: colors.$purple-navy;
+		// 			}
+		// 		}
+		// 	}
+		// }
 
-				&:visited {
-					color: colors.$white;
-				}
-			}
-		}
-	}
-
-	@media only screen and (max-width: device.$phone) {
+		// @media only screen and (max-width: device.$phone) {
 		&__one {
 			@include mixins.flex($flx-dir: column);
 			@include mixins.project-styling-phone-left();
@@ -111,14 +101,10 @@
 			&__item {
 				@include mixins.link-styling;
 				padding: 0 5px;
-				font-size: 48px;
+				font-size: 45px;
 
 				&:hover {
 					color: colors.$purple-navy;
-				}
-
-				&:visited {
-					color: colors.$white;
 				}
 			}
 		}

@@ -5,29 +5,27 @@
 // Tech-skills section
 
 .tech-skills {
-	@media only screen and (min-width: (device.$pc+ 1)) {
-		&__list {
-			height: 70vh;
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: repeat(3, 1fr);
-			justify-items: center;
-			align-items: center;
-			border-color: colors.$white;
-			border-left-style: solid;
-			border-right-style: solid;
-			margin: 10vh 20vh;
+	&__list {
+		height: 70vh;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: center;
+		align-items: center;
+		border-color: colors.$white;
+		border-left-style: solid;
+		border-right-style: solid;
+		margin: 10vh 20vh;
 
-			&__item {
-				height: 90px;
-				width: 90px;
-				font-size: 80px;
-				@include mixins.flex;
-			}
+		&__item {
+			height: 90px;
+			width: 90px;
+			font-size: 80px;
+			@include mixins.flex;
 		}
 	}
 
-	@media only screen and (min-width: (device.$phone + 1)) and (max-width: device.$pc) {
+	@media only screen and (max-width: device.$tablet) {
 		&__list {
 			height: 80vh;
 			display: grid;
@@ -53,7 +51,9 @@
 
 	@media only screen and (max-width: device.$phone) {
 		&__list {
-			@include mixins.flex($flx-dir: column);
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
 			margin-bottom: 2vh;
 
 			&__item {
