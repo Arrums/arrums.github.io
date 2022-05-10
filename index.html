@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/clouds.ico" />
     <meta name="description" content="Arrum Soerjo, Software Engineer">
     <link rel="stylesheet" href="./modules/style.css" />
     <!-- AOS Animation -->
@@ -17,17 +18,17 @@
 <body>
 
     <nav class = "navbar">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+
         <ul class="nav-list">
-            <li class="nav-list__item"><a href="#about" class="list-item__link nav-link-one">About</a></li>
-            <li class="nav-list__item"><a href="#projects" class="list-item__link  nav-link-two">Projects</a></li>
-            <li class="nav-list__item"><a href="#techSkills" class="list-item__link  nav-link-three">Tech Skills</a></li>
+            <li class="nav-list__item"><a href="#about" class="link-one">About</a></li>
+            <li class="nav-list__item"><a href="#projects" class="link-two">Projects</a></li>
+            <li class="nav-list__item"><a href="#techSkills" class="link-three">Tech Skills</a></li>
         </ul>
 
-        <div class="nav-btn">
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-        </div>
     </nav>
 
     <!-- Landing Page -->
@@ -35,7 +36,7 @@
         <h1 class="landing-page__title">I'm Arrum<span>Melbourne based</span><span>software engineer student</span></h1>
 
         <div class="landing-page__icon">
-        <a href="#about" class="landing-page__icon--link"><i class="fa-solid fa-arrow-down fa-3x"></i></a>
+        <a href="#about"><i class="fa-solid fa-arrow-down fa-3x bounce"></i></a>
         </div>
     </article>
 
@@ -193,7 +194,7 @@
         </section>
 
         <section class ="footer__info">
-            <p><a target="_blank" href="https://icons8.com/icon/90519/spring-logo">Icons by Icons8</a>  | © 2022 Arrum Soerjo</p>
+            <p><a target="_blank" href="https://icons8.com/icon/90519/spring-logo">Icons by Icons8</a>  | © <span id="currentYear"></span> Arrum Soerjo</p>
         </section>
     </footer>
     <script src="./index.js"></script>

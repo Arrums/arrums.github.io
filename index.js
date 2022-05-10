@@ -25,17 +25,27 @@ sectionOneObserver.observe(sectionOne);
 
 // Hamburger menu
 
-const navBtn = document.querySelector(".nav-btn");
-const navList = document.querySelector(".nav-list");
+// const navBtn = document.querySelector(".nav-btn");
+// const navList = document.querySelector(".nav-list");
 
-navBtn.addEventListener("click", () => {
-	navBtn.classList.toggle("active");
-	navList.classList.toggle("active");
-});
+// navBtn.addEventListener("click", () => {
+// 	navBtn.classList.toggle("active");
+// 	navList.classList.toggle("active");
+// });
 
-document.querySelectorAll(".list-item__link").forEach((n) =>
-	n.addEventListener("click", () => {
-		navBtn.classList.remove("active");
-		navList.classList.toggle("active");
-	}),
-);
+// document.querySelectorAll(".list-item__link").forEach((n) =>
+// 	n.addEventListener("click", () => {
+// 		navBtn.classList.remove("active");
+// 		navList.classList.toggle("active");
+// 	}),
+// );
+
+//Updating year
+
+updateYear = () => {
+	let year = new Date().getFullYear();
+
+	document.getElementById("currentYear").innerHTML = year;
+};
+
+updateYear();
