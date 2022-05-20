@@ -456,12 +456,13 @@ a {
   }
   .project__one--right {
     border-radius: 0.3rem;
-    width: 50%;
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin: 2rem 0;
   }
   .project__one--left {
     margin: 10px;
+    width: 100%;
   }
   .project__two {
     display: flex;
@@ -476,10 +477,11 @@ a {
   }
   .project__two--right {
     margin: 10px;
+    width: 100%;
   }
   .project__two--left {
     border-radius: 0.3rem;
-    width: 45%;
+    width: 90%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin: 2rem 0;
   }
@@ -496,12 +498,13 @@ a {
   }
   .project__three--right {
     border-radius: 0.3rem;
-    width: 50%;
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin: 2rem 0;
   }
   .project__three--left {
     margin: 10px;
+    width: 100%;
   }
   .project__four {
     display: flex;
@@ -516,10 +519,11 @@ a {
   }
   .project__four--right {
     margin: 10px;
+    width: 100%;
   }
   .project__four--left {
     border-radius: 0.3rem;
-    width: 45%;
+    width: 90%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin: 2rem 0;
   }
