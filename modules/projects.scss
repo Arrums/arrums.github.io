@@ -39,42 +39,6 @@
 	}
 
 	@media only screen and (max-width: device.$tablet) {
-		// 	&__one {
-		// 		@include mixins.flex($flx-dir: column);
-		// 		@include mixins.project-styling-tablet-left();
-		// 	}
-
-		// 	&__two {
-		// 		@include mixins.flex($flx-dir: column);
-		// 		@include mixins.project-styling-tablet-right();
-		// 	}
-
-		// 	&__three {
-		// 		@include mixins.flex($flx-dir: column);
-		// 		@include mixins.project-styling-tablet-left();
-		// 	}
-
-		// 	&__four {
-		// 		@include mixins.flex($flx-dir: column);
-		// 		@include mixins.project-styling-tablet-right();
-		// 	}
-
-		// 	&__button {
-		// 		margin-top: 15px;
-
-		// 		&__item {
-		// 			@include mixins.link-styling;
-		// 			padding: 0 5px;
-		// 			font-size: 45px;
-
-		// 			&:hover {
-		// 				color: colors.$purple-navy;
-		// 			}
-		// 		}
-		// 	}
-		// }
-
-		// @media only screen and (max-width: device.$phone) {
 		&__one {
 			@include mixins.flex($flx-dir: column);
 			@include mixins.project-styling-phone-left();
