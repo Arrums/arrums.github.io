@@ -79,7 +79,7 @@ a {
     height: 100vh;
     font-size: 3rem;
     color: #fff;
-    background-color: #414174ff;
+    background-color: #414174;
     transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
     clip-path: circle(200px at top right);
   }
@@ -317,14 +317,14 @@ a {
 }
 @media only screen and (min-width: 771px) {
   .about-me__photo {
-    background-color: #414174ff;
+    background-color: #414174;
     width: 45%;
   }
   .about-me__photo img {
     position: relative;
     left: -50px;
     top: 50px;
-    width: 95%;
+    width: 90%;
     height: auto;
   }
   .about-me__text {
@@ -440,7 +440,7 @@ a {
   transition: all 0.3s ease;
 }
 .project__button__item:hover {
-  color: #414174ff;
+  color: #414174;
 }
 @media only screen and (max-width: 770px) {
   .project__one {
@@ -537,7 +537,7 @@ a {
     font-size: 45px;
   }
   .project__button__item:hover {
-    color: #414174ff;
+    color: #414174;
   }
 }
 
@@ -607,7 +607,7 @@ a {
 }
 
 .footer {
-  background-color: #414174ff;
+  background-color: #414174;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -758,7 +758,7 @@ a {
     font-size: 50px;
   }
   .article__about {
-    height: 100vh;
+    height: 95vh;
     width: 90%;
     margin: auto;
     display: flex;
