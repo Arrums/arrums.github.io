@@ -47,7 +47,7 @@
 		}
 
 		&__about {
-			height: 100vh;
+			height: 95vh;
 			width: 90%;
 			margin: auto;
 			@include mixins.flex($flx-dir: column);

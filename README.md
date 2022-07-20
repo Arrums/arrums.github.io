@@ -3,11 +3,11 @@
 This is an ongoing project of my website portfolio. The website has a responsive
 design to mobile, tablet, and computer screen sizes.
 
-[Live Website](https://arrums.github.io/)
+### ⭐[Website](https://arrums.github.io/)
 
 ## Screenshots
 
-![screenshot-landing-page](https://user-images.githubusercontent.com/100544967/167287580-76a2ae13-e419-43db-a66d-a22e8147832b.PNG)
+![Landing Page](https://user-images.githubusercontent.com/100544967/179991838-eb427fd7-e540-4d6f-aab7-bd89f5b40302.PNG)
 
 ## Goals
 
